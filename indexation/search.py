@@ -77,7 +77,7 @@ if __name__ == '__main__':
     for query in queries:
         print query[:-1]
         query = query_stack.compile(query)
-        query = get_query_urls.get_query_urls(len(urls))
+        query = query.get_query_urls(len(urls))
 
         print len(query)
         for q_i in query:
